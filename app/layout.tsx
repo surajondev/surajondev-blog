@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, VT323, Raleway } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "./Navigation";
+import { Footer } from "./Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const arcade = VT323({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-arcade",
+});
+const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${arcade.variable} ${raleway.variable}`}>
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
