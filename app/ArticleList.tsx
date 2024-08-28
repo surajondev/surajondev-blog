@@ -30,6 +30,7 @@ export const ArticleList = () => {
               date={item.created_at}
               tag={item.tag}
               slug={item.slug}
+              key={item.slug}
             />
           );
         })}
@@ -46,7 +47,10 @@ const ArticleCard = ({ title, description, date, tag, slug }: any) => {
           <p className="font-arcade text-2xl hover:text-purple-400 ">{title}</p>
           <p className="flex">
             {tag.map((item: string) => (
-              <p className="font-raleway underline mr-2 decoration-purple-300 decoration-2">
+              <p
+                className="font-raleway underline mr-2 decoration-purple-300 decoration-2"
+                key={item}
+              >
                 {item}
               </p>
             ))}
