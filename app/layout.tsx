@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <script defer src="https://umami-analytics-38efwq1d7-suraj-vishwakarmas-projects-f59ae002.vercel.app/script.js" data-website-id="a86067d4-47a2-4a73-8b82-4f03a051b13c"></script>
+        <script defer src="https://umami-analytics-38efwq1d7-suraj-vishwakarmas-projects-f59ae002.vercel.app/script.js" data-website-id="a86067d4-47a2-4a73-8b82-4f03a051b13c"></script>
       </head>
       <body className={`${arcade.variable} ${raleway.variable}`}>
         <Navigation />

@@ -10,7 +10,7 @@ export const Navigation = () => {
   const [hoveredX, setHoveredX] = useState(false);
   const [hoveredLinkedIn, setHoveredLinkedIn] = useState(false);
   return (
-    <div className="flex container mx-auto w-6/12 font-arcade justify-between">
+    <div className="flex lg:flex-row flex-col container mx-auto lg:w-6/12 md:w-8/12 w-10/12  font-arcade justify-between items-center">
       <ul className="flex flex-row gap-10 mt-5 mb-5 heading2">
         <Link href="/">
           <li className="hover:underline cursor-pointer border-purple-600">

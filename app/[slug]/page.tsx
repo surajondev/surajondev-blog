@@ -56,7 +56,7 @@ const Page = () => {
   }, [pathname]);
 
   return (
-    <div className="container mx-auto w-6/12 mt-10">
+    <div className="container mx-auto lg:w-6/12 md:w-8/12 mt-10 w-10/12">
       {articleData && (
         <div>
           <Image
